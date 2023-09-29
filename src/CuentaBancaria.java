@@ -2,40 +2,36 @@
  * clase CuentaBancaria
  */
 public class CuentaBancaria {
-    private String numeroCuenta;
-    private String nombreBanco;
-    private String nombreUsuario;
-    private double saldo;
+
+    private String nombre;
+    private double notaMateria1;
+    private double notaMateria2;
+    private double notaMateria3;
+    private double fecha;
 
     /****************************************************************************************************/
     /******************************************* CONSTRUCTORES ******************************************/
     /****************************************************************************************************/
-
     /**
-     * Método constuctor para inicializar los atributos de la clase
-     * @param numeroCuenta Número de la cuenta bancaria
-     * @param nombreBanco Nombre del banco
-     * @param nombreUsuario Nombre del usuario titular de la cuenta bancaria
+     *  * Método constuctor para inicializar los atributos de la clase
+     * @param nombre
+     * @param notaMateria1
+     * @param notaMateria2
+     * @param notaMateria3
      *
-     * Complejidad temporal: O(1) Tiempo constante
+     * * Complejidad temporal: O(1) Tiempo constante
      */
-    public CuentaBancaria(String numeroCuenta, String nombreBanco, String nombreUsuario){
-        this.numeroCuenta = numeroCuenta;
-        this.nombreBanco = nombreBanco;
-        this.nombreUsuario = nombreUsuario;
-        this.saldo = 0.0;
+    public CuentaBancaria(String nombre, double notaMateria1, double notaMateria2, double notaMateria3, double fecha) {
+        this.nombre = nombre;
+        this.notaMateria1 = notaMateria1;
+        this.notaMateria2 = notaMateria2;
+        this.notaMateria3 = notaMateria3;
+        this.fecha = fecha;
     }
 
-
-
-    /**
-     * Método que permite realizar una consignación en la cuenta bancaria
-     * @param valor
-     *
-     * Complejidad temporal: O(1) Tiempo constante
-     */
-    public String consignar(double valor){
-        this.saldo += valor;
+    
+    public double getEdad(double fecha){
+        this.fecha += valor;
         return "CONSIGNACIÓN EXITOSA";
     }
 
