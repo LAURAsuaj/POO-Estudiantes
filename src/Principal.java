@@ -31,5 +31,8 @@ public class Principal {
         /** ESTE ES UN ERROR DE DISEÑO, DESDE AQUÍ NO DEBERÍA PERMITIRSE LA MODIFICACIÓN DEL ATRIBUTO SALDO DEL OBJETO MARIO **/
         /*********************************************************************************************************************/
         cuentaMario.saldo = -30;
+
+        System.out.println("OHHHH NOOOOOOOO! mi saldo fue modificado. La clase CuentaBancaria es insegura, no tiene encapsulamiento :(");
+        System.out.println("Mi nuevo saldo es: "+cuentaMario.consultarsaldo());
     }
 }
